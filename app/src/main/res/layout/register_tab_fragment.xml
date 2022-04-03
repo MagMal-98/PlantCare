@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/emailSign"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.80"
+        app:layout_constraintVertical_bias="0.30"
+        app:layout_constraintHorizontal_bias="0.50"
+        android:hint="E-mail"
+        android:background="@drawable/edit_text_bg"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.80"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0.50"
+        android:layout_marginTop="20dp"
+        android:hint="Username"
+        android:background="@drawable/edit_text_bg"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailSign"  />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.80"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0.50"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:background="@drawable/edit_text_bg"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username" />
+
+    <EditText
+        android:id="@+id/passConf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Confirm Password"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pass"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent="0.80" />
+
+    <android.widget.Button
+        android:id="@+id/signupButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_bg"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passConf"
+        app:layout_constraintVertical_bias="0.70"
+        app:layout_constraintWidth_percent="0.80"
+        app:rippleColor="#FFFFFF" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
